@@ -1,0 +1,6 @@
+C:\Users\Dinming\Documents\Leetcode\LeetCodeDemo\LeetCodeDemo\bin\Debug\LeetCodeDemo.exe.config
+C:\Users\Dinming\Documents\Leetcode\LeetCodeDemo\LeetCodeDemo\bin\Debug\LeetCodeDemo.exe
+C:\Users\Dinming\Documents\Leetcode\LeetCodeDemo\LeetCodeDemo\bin\Debug\LeetCodeDemo.pdb
+C:\Users\Dinming\Documents\Leetcode\LeetCodeDemo\LeetCodeDemo\obj\Debug\LeetCodeDemo.csprojAssemblyReference.cache
+C:\Users\Dinming\Documents\Leetcode\LeetCodeDemo\LeetCodeDemo\obj\Debug\LeetCodeDemo.exe
+C:\Users\Dinming\Documents\Leetcode\LeetCodeDemo\LeetCodeDemo\obj\Debug\LeetCodeDemo.pdb
