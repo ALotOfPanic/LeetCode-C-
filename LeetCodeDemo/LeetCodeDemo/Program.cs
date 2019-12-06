@@ -32,50 +32,7 @@ namespace LeetCodeDemo
         }
 
 
-        public string GetHint(string secret, string guess)
-        {
-            int a = 0;
-            int b = 0;
-            Dictionary<char, int> secretDic = new Dictionary<char, int>();
-            Dictionary<char, int> guessDic = new Dictionary<char, int>();
-            for (int i = 0; i < secret.Length; i++)
-            {
-
-                if (secret[i] == guess[i])
-                {
-                    a++;
-                }
-                else
-                {
-                    if (guessDic.ContainsKey(guess[i]))
-                    {
-                        guessDic[guess[i]] += 1;
-                    }
-                    else
-                    {
-                        guessDic.Add(guess[i], i);
-                    }
-                    if (secretDic.ContainsKey(secret[i]))
-                    {
-                        secretDic[guess[i]] += 1;
-                    }
-                    else
-                    {
-                        secretDic.Add(secret[i], i); 
-                    } 
-                }
-            }
-            Dictionary<char, int>.KeyCollection keys = secretDic.Keys;
-            foreach (char key in keys)
-            {
-                if (guessDic.ContainsKey(key))
-                {
-                    guessDic[key] -= 1; 
-                    b++;
-                }
-            }
-            return a + "A" + b + "B";
-        }
+      
     }
 
 }
