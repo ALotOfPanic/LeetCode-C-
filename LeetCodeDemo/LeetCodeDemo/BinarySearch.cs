@@ -88,18 +88,7 @@ namespace LeetCodeDemo
             return -1;
         }
 
-        /** 
-        * Forward declaration of guess API.
-        * @param  num   your guess
-        * @return 	     -1 if num is lower than the guess number
-        *			      1 if num is higher than the guess number
-        *               otherwise return 0
-        * int guess(int num);
-        */
-        public int guess(int n)
-        {
-            return new Random().Next(-1, 1);
-        }
+        
         //输入: n = 10, pick = 6
         //输出: 6
         public int GuessNumber(int n)
@@ -108,11 +97,11 @@ namespace LeetCodeDemo
             while (left <= right)
             {
                 int mid = left + (right - left) / 2;
-                if (guess(mid) == 1)
+                if (Guess() == 1)
                 {
                     left = mid + 1;
                 }
-                else if (guess(mid) == -1)
+                else if (Guess() == -1)
                 {
                     right = mid - 1;
                 }
@@ -163,9 +152,41 @@ namespace LeetCodeDemo
         // 寻找旋转排序数组中的最小值
         public int FindMin(int[] nums)
         {
-            
-            return -1;
-
+            return nums.Length;
         }
+        /*Pow(x, n) 计算 x 的 n 次幂函数。*/
+        //-100.0 < x < 100.0
+        //n 是 32 位有符号整数，其数值范围是[−231, 231 − 1] 。
+        public double MyPow(double x, int n)
+        {
+            if (x == 0) { return 0; }
+            if (n == 0) { return 1; }
+            if (n == -1) { return 1 / x; }
+            double temp = MyPow(x, (int)Math.Floor((double)n / 2));
+            if (n % 2 == 0)
+            {
+                return temp * temp;
+            }
+            else
+            {
+                return temp * temp * x;
+            }
+        }
+
+        #region  API 提供内部API
+
+        /** 
+        * Forward declaration of guess API.
+        * @param  num   your guess
+        * @return 	     -1 if num is lower than the guess number
+        *			      1 if num is higher than the guess number
+        *               otherwise return 0
+        * int guess(int num);
+        */
+        public int Guess()
+        {
+            return new Random().Next(-1, 1);
+        }
+        #endregion
     }
 }
