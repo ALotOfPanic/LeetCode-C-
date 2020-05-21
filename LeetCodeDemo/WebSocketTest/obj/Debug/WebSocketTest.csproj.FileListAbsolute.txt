@@ -1,0 +1,8 @@
+C:\Users\Administrator\Desktop\代码\LeetCode-CSharp\LeetCodeDemo\WebSocketTest\bin\Debug\WebSocketTest.exe.config
+C:\Users\Administrator\Desktop\代码\LeetCode-CSharp\LeetCodeDemo\WebSocketTest\bin\Debug\WebSocketTest.exe
+C:\Users\Administrator\Desktop\代码\LeetCode-CSharp\LeetCodeDemo\WebSocketTest\bin\Debug\WebSocketTest.pdb
+C:\Users\Administrator\Desktop\代码\LeetCode-CSharp\LeetCodeDemo\WebSocketTest\bin\Debug\Fleck.dll
+C:\Users\Administrator\Desktop\代码\LeetCode-CSharp\LeetCodeDemo\WebSocketTest\obj\Debug\WebSocketTest.csprojAssemblyReference.cache
+C:\Users\Administrator\Desktop\代码\LeetCode-CSharp\LeetCodeDemo\WebSocketTest\obj\Debug\WebSocketTest.csproj.CopyComplete
+C:\Users\Administrator\Desktop\代码\LeetCode-CSharp\LeetCodeDemo\WebSocketTest\obj\Debug\WebSocketTest.exe
+C:\Users\Administrator\Desktop\代码\LeetCode-CSharp\LeetCodeDemo\WebSocketTest\obj\Debug\WebSocketTest.pdb

@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace LeetCodeDemo
 {
@@ -16,18 +13,18 @@ namespace LeetCodeDemo
         /// </summary>
         /// <param name="nums"></param>
         /// <returns></returns>
-        public int LengthOfLIS(int[] nums)
+        public int LengthOfLis(int[] nums)
         {
             int len = nums.Length;
             if (nums.Length < 2) return len;
             int[] resultArr = new int[len];
-            for (int a = 0; a < len; a++)
+            for (var a = 0; a < len; a++)
             {
                 resultArr[a] = 1;
             }
-            for (int i = 1; i < len; i++)
+            for (var i = 1; i < len; i++)
             {
-                for (int j = i; j < i; j++)
+                for (var j = i; j < i; j++)
                 {
                     if (nums[j] < nums[i])
                     {
@@ -41,7 +38,7 @@ namespace LeetCodeDemo
                 result = Math.Max(result, resultArr[i]);
             }
             return result;
-        } 
+        }
 
         /// <summary>
         ///写下一个数字让你的朋友猜有多少位数字和确切位置都猜对了（称为“Bulls”, 公牛）有多少位数字猜对了但是位置不对（称为“Cows”, 奶牛）。
@@ -55,13 +52,12 @@ namespace LeetCodeDemo
         /// <returns></returns>
         public string GetHint(string secret, string guess)
         {
-            int a = 0;
-            int b = 0;
-            Dictionary<char, int> secretDic = new Dictionary<char, int>();
-            Dictionary<char, int> guessDic = new Dictionary<char, int>();
+            var a = 0;
+            var b = 0;
+            var secretDic = new Dictionary<char, int>();
+            var guessDic = new Dictionary<char, int>();
             for (int i = 0; i < secret.Length; i++)
             {
-
                 if (secret[i] == guess[i])
                 {
                     a++;
@@ -86,8 +82,7 @@ namespace LeetCodeDemo
                     }
                 }
             }
-            Dictionary<char, int>.KeyCollection keys = secretDic.Keys;
-            foreach (char key in keys)
+            foreach (char key in secretDic.Keys)
             {
                 if (guessDic.ContainsKey(key))
                 {
@@ -98,19 +93,88 @@ namespace LeetCodeDemo
             return a + "A" + b + "B";
         }
 
-        /// <summary>
-        ///删除最小数量的无效括号，使得输入的字符串有效，返回所有可能的结果。说明: 输入可能包含了除(和)以外的字符。
-        ///输入: "()())()"
-        ///输出: ["()()()", "(())()"] 
-        ///输入: "(a)())()"
-        ///输出: ["(a)()()", "(a())()"]
-        /// </summary>
-        /// <param name="s"></param>
-        /// <returns></returns>
+        ///  <summary>
+        /// 删除最小数量的无效括号，使得输入的字符串有效，返回所有可能的结果。说明: 输入可能包含了除(和)以外的字符。
+        /// 输入: "()())()"
+        /// 输出: ["()()()", "(())()"] 
+        /// 输入: "(a)())()"
+        /// 输出: ["(a)()()", "(a())()"]
+        ///  </summary>
+        ///  <returns></returns>
         public IList<string> RemoveInvalidParentheses(string str)
         {
             List<string> resultList = new List<string>();
             return resultList;
         }
+
+        /// <summary>
+        /// 给定一个没有重复数字的序列，返回其所有可能的全排列。
+        /// 输入: [1,2,3]
+        /// 输出:[[1,2,3],[1,3,2],[2,1,3],[2,3,1],[3,1,2],[3,2,1]
+        /// </summary>
+        /// <param name="nums"></param>
+        /// <returns></returns>
+        public List<List<int>> Permute(int[] nums)
+        {
+            List<List<int>> answer = new List<List<int>>();
+            return answer;
+        }
+ 
+
+        //# 给定一个二叉树，返回所有从根节点到叶子节点的路径。
+        //# 输入 [1,2,3,null,5]
+        //# 输出: ["1->2->5", "1->3"]
+        //# 解释: 所有根节点到叶子节点的路径为: 1->2->5, 1->3
+        /**
+         * Definition for a binary tree node. 
+         */ 
+
+        public IList<string> BinaryTreePaths(TreeNode root)
+        {
+            List<string> paths = new List<string>();
+            PrintPath(root, "", paths);
+            return paths;
+        }
+
+        public void PrintPath(TreeNode tree, string path, List<string> paths)
+        {
+            if (tree == null) return; 
+            path += tree.val;
+            if (tree.left == null && tree.right == null)
+            {
+                paths.Add(path);
+            }
+            else
+            {
+                path += "->";
+                PrintPath(tree.left, path, paths);
+                PrintPath(tree.right, path, paths);
+            }
+        }
+
+        /// <summary>
+        /// 给定一个整数数组（有正数有负数），找出总和最大的连续数列，并返回总和。
+        /// </summary>
+        /// <param name="nums"></param>
+        /// <returns></returns>
+        public int MaxSubArray(int[] nums)
+        {
+            int max = int.MaxValue, i = 0, sum= 0;
+            while (i < nums.Length)
+            {
+                if(sum+ nums[i] < nums[i])
+                {
+                    sum = 0;
+                }
+                sum += nums[i];
+                if (sum > max)
+                {
+                    max = sum;
+                }
+                i++;
+            }
+            return max;
+        } 
+
     }
 }

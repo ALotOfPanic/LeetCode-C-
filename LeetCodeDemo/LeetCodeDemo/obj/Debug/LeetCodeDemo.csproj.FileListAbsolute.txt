@@ -4,3 +4,9 @@ C:\Users\Dinming\Documents\Leetcode\LeetCodeDemo\LeetCodeDemo\bin\Debug\LeetCode
 C:\Users\Dinming\Documents\Leetcode\LeetCodeDemo\LeetCodeDemo\obj\Debug\LeetCodeDemo.csprojAssemblyReference.cache
 C:\Users\Dinming\Documents\Leetcode\LeetCodeDemo\LeetCodeDemo\obj\Debug\LeetCodeDemo.exe
 C:\Users\Dinming\Documents\Leetcode\LeetCodeDemo\LeetCodeDemo\obj\Debug\LeetCodeDemo.pdb
+C:\Users\Administrator\Desktop\代码\LeetCode-CSharp\LeetCodeDemo\LeetCodeDemo\bin\Debug\LeetCodeDemo.exe.config
+C:\Users\Administrator\Desktop\代码\LeetCode-CSharp\LeetCodeDemo\LeetCodeDemo\bin\Debug\LeetCodeDemo.exe
+C:\Users\Administrator\Desktop\代码\LeetCode-CSharp\LeetCodeDemo\LeetCodeDemo\bin\Debug\LeetCodeDemo.pdb
+C:\Users\Administrator\Desktop\代码\LeetCode-CSharp\LeetCodeDemo\LeetCodeDemo\obj\Debug\LeetCodeDemo.csprojAssemblyReference.cache
+C:\Users\Administrator\Desktop\代码\LeetCode-CSharp\LeetCodeDemo\LeetCodeDemo\obj\Debug\LeetCodeDemo.exe
+C:\Users\Administrator\Desktop\代码\LeetCode-CSharp\LeetCodeDemo\LeetCodeDemo\obj\Debug\LeetCodeDemo.pdb
