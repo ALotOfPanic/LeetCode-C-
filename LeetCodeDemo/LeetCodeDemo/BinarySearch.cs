@@ -8,10 +8,13 @@ namespace LeetCodeDemo
 {
     public class BinarySearch
     {
-        //给定一个 n 个元素有序的（升序）整型数组 nums 和一个目标值 target  ，写一个函数搜索 nums 中的 target，如果目标值存在返回下标，否则返回 -1。
-        //输入: nums = [-1,0,3,5,9,12], target = 9
-        //输出: 4
-        //解释: 9 出现在 nums 中并且下标为 4
+        /// <summary>
+        /// 给定一个 n 个元素有序的（升序）整型数组 nums 和一个目标值 target  ，写一个函数搜索 nums 中的 target，如果目标值存在返回下标，否则返回 -1。
+        /// 输入: nums = [-1,0,3,5,9,12], target = 9
+        /// </summary>
+        /// <param name="nums"></param>
+        /// <param name="target"></param>
+        /// <returns></returns> 
         public int Search(int[] nums, int target)
         {
             if (nums == null || nums.Length == 0)
@@ -38,10 +41,14 @@ namespace LeetCodeDemo
             return -1;
         }
 
-        //搜索旋转排序数组
-        //假设按照升序排序的数组在预先未知的某个点上进行了旋转。
-        //(例如，数组[0, 1, 2, 4, 5, 6, 7] 可能变为[4, 5, 6, 7, 0, 1, 2] )。
-        //搜索一个给定的目标值，如果数组中存在这个目标值，则返回它的索引，否则返回 -1 。
+        /// <summary>
+        /// 搜索旋转排序数组
+        /// 假设按照升序排序的数组在预先未知的某个点上进行了旋转。(例如，数组[0, 1, 2, 4, 5, 6, 7] 可能变为[4, 5, 6, 7, 0, 1, 2] )。 
+        ///  搜索一个给定的目标值，如果数组中存在这个目标值，则返回它的索引，否则返回 -1 。
+        /// </summary>
+        /// <param name="nums"></param>
+        /// <param name="target"></param>
+        /// <returns></returns>
         public int SearchRoate(int[] nums, int target)
         {
             //进行Sort 排序 并记录位置
@@ -88,9 +95,11 @@ namespace LeetCodeDemo
             return -1;
         }
 
-        
-        //输入: n = 10, pick = 6
-        //输出: 6
+        /// <summary>
+        /// 猜数字  输入: n = 10, pick = 6  输出: 6
+        /// </summary>
+        /// <param name="n"></param>
+        /// <returns></returns>
         public int GuessNumber(int n)
         {
             int left = 0, right = n;
@@ -113,9 +122,11 @@ namespace LeetCodeDemo
             return -1;
         }
 
-        // x 的平方根
-        //实现 int sqrt(int x) 函数。 计算并返回 x 的平方根，其中 x 是非负整数。
-        //由于返回类型是整数，结果只保留整数的部分，小数部分将被舍去。
+        /// <summary>
+        ///  x 的平方根   实现 int sqrt(int x) 函数。 计算并返回 x 的平方根，其中 x 是非负整数。 由于返回类型是整数，结果只保留整数的部分，小数部分将被舍去。
+        /// </summary>
+        /// <param name="x"></param>
+        /// <returns></returns>
         public int MySqrt(int x)
         {
             if (x == 0)
@@ -149,14 +160,22 @@ namespace LeetCodeDemo
                 return (int)mid;
         }
 
-        // 寻找旋转排序数组中的最小值
+        /// <summary>
+        /// 寻找旋转排序数组中的最小值
+        /// </summary>
+        /// <param name="nums"></param>
+        /// <returns></returns>
         public int FindMin(int[] nums)
         {
             return nums.Length;
         }
-        /*Pow(x, n) 计算 x 的 n 次幂函数。*/
-        //-100.0 < x < 100.0
-        //n 是 32 位有符号整数，其数值范围是[−231, 231 − 1] 。
+        /// <summary>
+        /// 计算 x 的 n 次幂函数
+        /// -100.0 < x < 100.0  n 是 32 位有符号整数，其数值范围是[−231, 231 − 1] 。
+        /// </summary>
+        /// <param name="x"></param>
+        /// <param name="n"></param>
+        /// <returns></returns>
         public double MyPow(double x, int n)
         {
             if (x == 0) { return 0; }
