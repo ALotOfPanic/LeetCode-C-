@@ -18,15 +18,15 @@ namespace LeetCodeDemo
             QueueAndStack queueAndStack = new QueueAndStack();
             Linked linked = new Linked();
             #endregion
-
+           
 
             #region  测试方法区域
-            
-            char[] chars = { 'A', ' ', 'm', 'a', 'n', ',', ' ', 'a', ' ', 'p', 'l', 'a', 'n', ',', ' ', 'a', ' ', 'c', 'a', 'n', 'a', 'l', ':', ' ', 'P', 'a', 'n', 'a', 'm', 'a' };
-            recursion_I.ReverseString(chars);
 
+            //char[] chars = { 'A', ' ', 'm', 'a', 'n', ',', ' ', 'a', ' ', 'p', 'l', 'a', 'n', ',', ' ', 'a', ' ', 'c', 'a', 'n', 'a', 'l', ':', ' ', 'P', 'a', 'n', 'a', 'm', 'a' };
+            //recursion_I.ReverseString(chars);
+            int result= recursion_I.Fib(5); 
+            Console.WriteLine(result);
             #endregion
-
             Console.ReadKey();
              
         }

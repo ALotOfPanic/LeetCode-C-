@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace LeetCodeDemo
 {
-    class QueueAndStack
+    public class QueueAndStack
     {
+        
     }
 }
