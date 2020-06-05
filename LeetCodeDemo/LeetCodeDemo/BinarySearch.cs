@@ -167,7 +167,26 @@ namespace LeetCodeDemo
         /// <returns></returns>
         public int FindMin(int[] nums)
         {
-            return nums.Length;
+            if (nums == null || nums.Length < 1)
+            {
+                return -1;
+            } 
+            int left = 0;
+            int right = nums.Length - 1;
+            //正常情况  左边永远比右边小 
+            while (left < right)
+            {
+                int mid = left + (right - left) / 2;
+                if (nums[mid] > nums[right])
+                {
+                    left = mid + 1;
+                }
+                else
+                {
+                    right = mid;
+                }
+            }
+            return nums[left];
         }
         /// <summary>
         /// 计算 x 的 n 次幂函数

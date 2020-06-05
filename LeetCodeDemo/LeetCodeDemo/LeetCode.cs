@@ -4,7 +4,7 @@ using static LeetCodeDemo.ExteriorStruct;
 
 namespace LeetCodeDemo
 {
-    public class FunctionClass
+    public class LeetCode
     {
         /// <summary>
         ///给定一个无序的整数数组，找到其中最长上升子序列的长度。
